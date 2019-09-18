@@ -1,0 +1,98 @@
+{
+    "____comment": "This file was generated with eosio-abigen. DO NOT EDIT ",
+    "version": "eosio::abi/1.1",
+    "types": [],
+    "structs": [
+        {
+            "name": "elapsedtime",
+            "base": "",
+            "fields": [
+                {
+                    "name": "usern",
+                    "type": "name"
+                }
+            ]
+        },
+        {
+            "name": "expiration",
+            "base": "",
+            "fields": [
+                {
+                    "name": "usern",
+                    "type": "name"
+                }
+            ]
+        },
+        {
+            "name": "resettimer",
+            "base": "",
+            "fields": [
+                {
+                    "name": "user",
+                    "type": "name"
+                }
+            ]
+        },
+        {
+            "name": "starttimer",
+            "base": "",
+            "fields": [
+                {
+                    "name": "usern",
+                    "type": "name"
+                }
+            ]
+        },
+        {
+            "name": "user_t",
+            "base": "",
+            "fields": [
+                {
+                    "name": "usern",
+                    "type": "name"
+                },
+                {
+                    "name": "timer",
+                    "type": "time_point_sec"
+                },
+                {
+                    "name": "expiration",
+                    "type": "time_point_sec"
+                }
+            ]
+        }
+    ],
+    "actions": [
+        {
+            "name": "elapsedtime",
+            "type": "elapsedtime",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "expiration",
+            "type": "expiration",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "resettimer",
+            "type": "resettimer",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "starttimer",
+            "type": "starttimer",
+            "ricardian_contract": ""
+        }
+    ],
+    "tables": [
+        {
+            "name": "users",
+            "type": "user_t",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        }
+    ],
+    "ricardian_clauses": [],
+    "variants": []
+}
