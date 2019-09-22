@@ -23,15 +23,6 @@ ACTION timer::starttimer(name usern) {
   
 }
 
-// 2. calculate the expiration time that will occur in 7 days 
-
-// 3. calculate the elapsed time
-// 4. create a check for every passing 24 hours - after every 24 hours a late fee is accrued
-// 5. check if elapsed time is greater than 7 seconds - enact deliquency fee
-// 6. stop the clock - this occurs if the late-fee time expires, or a early payment is made
-// 7. reset the clock
-
-
 
 ACTION timer::expiration(name usern){
   require_auth(usern);
@@ -58,8 +49,7 @@ ACTION timer::elapsedtime(name usern){
   if(itr->expiration > current_time_point()){
     print("the deadline has passed");
     // reset the clock
-    // deliquency fee
-    // bailout
+   
   }else{
     print("the deadline has not yet passed");
     // missed payments are accummulated
